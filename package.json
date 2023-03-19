@@ -1,0 +1,36 @@
+{
+  "name": "dimmer-api",
+  "version": "1.0.0",
+  "description": "Dante's Dimmer API",
+  "main": "./src/server",
+  "scripts": {
+    "test": "jest --coverage",
+    "watch:test": "jest --watchAll --coverage",
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.21"
+  }
+}
