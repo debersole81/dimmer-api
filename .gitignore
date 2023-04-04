@@ -2,6 +2,10 @@
 ################
 node_modules
 
+# Typescript #
+################
+dist
+
 # Compiled source #
 ###################
 *.com
