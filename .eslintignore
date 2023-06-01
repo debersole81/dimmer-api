@@ -1,0 +1,13 @@
+# Node modules #
+################
+node_modules
+
+# Build #
+################
+dist
+
+# Config Files #
+################
+babel.config.ts
+jest.config.ts
+tsconfig.json
