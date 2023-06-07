@@ -1,0 +1,12 @@
+name: Test Runner
+on: [push]
+jobs:
+  dimmer_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Node
+        uses: actions/checkout@v2
+        with:
+          node-version: 16.14.2
+      - run: npm ci
+      - run: npm test
